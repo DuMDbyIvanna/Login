@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+<body>
+    <button id="openPopup">Iniciar Sesión</button>
+
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <div id="loginFormContainer">
+          <h2>Iniciar Sesión</h2>
+          <form id="loginForm">
+            <input type="email" placeholder="Correo electrónico" name="email">
+            <input type="password" placeholder="Contraseña" name="password">
+            <input type="submit" value="Iniciar Sesión">
+          </form>
+          <p>¿No tienes una cuenta? <a href="#" id="showRegisterForm">Regístrate</a></p>
+        </div>
+        <div id="registerFormContainer" style="display: none;">
+          <h2>Registro</h2>
+          <form id="registerForm">
+            <input type="text" placeholder="Nombre completo" name="fullname">
+            <input type="email" placeholder="Correo electrónico" name="email">
+            <input type="password" placeholder="Contraseña" name="password">
+            <input type="submit" value="Registrarse">
+          </form>
+          <p>¿Ya tienes una cuenta? <a href="#" id="showLoginForm">Iniciar Sesión</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="JS/main.js"></script>
+
+
+</body>
+</html>
